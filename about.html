@@ -115,7 +115,7 @@ Author URL: http://w3layouts.com
                             <li class="name-style">Age</li>
                             <li>:</li>
                             <li>
-                                <p>14 Years</p>
+                                <p id="age"></p>
                             </li>
                         </ul>
                         <ul class="single-info">
@@ -139,7 +139,12 @@ Author URL: http://w3layouts.com
         </div>
     </section>
     <!-- //about section -->
-
+ <script>
+const d = new Date();
+let year = d.getFullYear();
+    year = year - 2008
+document.getElementById("age").innerHTML = year+" Years";
+</script>
     <!-- text with button -->
     <section class="w3l-timeline-1 text-center py-5">
         <div class="container py-lg-5 py-4">
@@ -262,7 +267,7 @@ Author URL: http://w3layouts.com
                 </div>
             </div>
             <!-- copyright -->
-            <p class="copy-right-w3 text-white mt-5 pt-4">© 2023 Riswan.P.R . All rights reserved | Design by
+            <p class="copy-right-w3 text-white mt-5 pt-4">© 2024 Riswan.P.R . All rights reserved | Design by
                 Riswan.P.R
             </p>
         </div>
