@@ -186,7 +186,7 @@ Author URL: http://w3layouts.com
                             <li class="name-style">Age</li>
                             <li>:</li>
                             <li>
-                                <p>14 Years</p>
+                                <p id = "age"> Years</p>
                             </li>
                         </ul>
                         <ul class="single-info">
@@ -211,7 +211,13 @@ Author URL: http://w3layouts.com
     </section>
     <!-- //about section -->
 
- 
+ <script>
+const d = new Date();
+let year = d.getFullYear();
+    year = year - 2008
+document.getElementById("age").innerHTML = year;
+</script>
+
 
     <!-- home service section -->
     <section class="w3l-servicesblock1 py-5" id="services">
@@ -323,10 +329,16 @@ Author URL: http://w3layouts.com
                 </div>
             </div>
             <!-- copyright -->
-            <p class="copy-right-w3 text-white mt-5 pt-4">© 2023 Riswan.P.R . All Rights Reserved | Design by
+            <p class="copy-right-w3 text-white mt-5 pt-4">© <b id = "year"></b> Riswan.P.R . All Rights Reserved | Design by
                 Riswan.P.R
             </p>
         </div>
+        
+ <script>
+const d = new Date();
+let year = d.getFullYear();
+document.getElementById("year").innerHTML = year;
+</script>
     </footer>
     <!-- //footer -->
 
